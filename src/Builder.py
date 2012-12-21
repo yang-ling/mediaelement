@@ -90,7 +90,6 @@ def addHeader(headerFilename, filename):
 addHeader('js/me-header.js', '../build/' + me_filename + '.min.js')
 addHeader('js/mep-header.js', '../build/' + mep_filename + '.min.js')
 
-
 # COMBINE into single script
 print('Combining scripts')
 code = ''
@@ -112,7 +111,6 @@ code += src_file.read() + "\n"
 tmp_file = open('../build/' + combined_filename + '.min.js','w')
 tmp_file.write(code)
 tmp_file.close()
-
 
 # MINIFY CSS
 print('Minifying CSS')
